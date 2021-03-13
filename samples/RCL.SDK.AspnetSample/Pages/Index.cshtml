@@ -1,0 +1,52 @@
+﻿@page
+@using Newtonsoft.Json;
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">RCL Lets Encrypt SDK</h1>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-header">
+                    GetCertificate
+                </div>
+                <div class="card-body">
+                    @JsonConvert.SerializeObject(Model.CertificateResponse)
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-header">
+                    GetCertificateList
+                </div>
+                <div class="card-body">
+                    @JsonConvert.SerializeObject(Model.LstCertificateResponse)
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-header">
+                    PostCertificateRenewal
+                </div>
+                <div class="card-body">
+                    @JsonConvert.SerializeObject(Model.LstCertificateResponseRenew)
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-header">
+                    PostCertificate
+                </div>
+                <div class="card-body">
+                    @JsonConvert.SerializeObject(Model.CertificateResponseUpdate)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
