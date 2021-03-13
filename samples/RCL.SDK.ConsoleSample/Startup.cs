@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace RCL.LetsEncrypt.SDK.ConsoleSample
+namespace RCL.SDK.ConsoleSample
 {
     public static class Startup
     {

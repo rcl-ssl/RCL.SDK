@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace RCL.LetsEncrypt.SDK.AspnetSample
+namespace RCL.SDK.AspnetSample
 {
     public class Startup
     {

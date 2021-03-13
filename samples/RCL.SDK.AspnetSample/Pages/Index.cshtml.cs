@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RCL.LetsEncrypt.SDK.AspnetSample.Pages
+namespace RCL.SDK.AspnetSample.Pages
 {
     public class IndexModel : PageModel
     {

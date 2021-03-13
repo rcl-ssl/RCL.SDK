@@ -4,7 +4,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 
-namespace RCL.LetsEncrypt.SDK.FunctionSample
+namespace RCL.SDK.FunctionSample
 {
     public class GetCertificate
     {

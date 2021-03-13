@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace RCL.LetsEncrypt.SDK.ConsoleSample
+namespace RCL.SDK.ConsoleSample
 {
     class Program
     {
@@ -50,7 +50,7 @@ namespace RCL.LetsEncrypt.SDK.ConsoleSample
             CertificateResponse certificateResponse = new CertificateResponse
             {
                 id = 123,
-                name = "contoso.com",
+                name = "shopeneur.com",
                 remoteCreateDate = DateTime.Now
             };
 

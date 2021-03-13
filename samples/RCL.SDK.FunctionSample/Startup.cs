@@ -2,8 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-[assembly: FunctionsStartup(typeof(RCL.LetsEncrypt.SDK.FunctionSample.Startup))]
-namespace RCL.LetsEncrypt.SDK.FunctionSample
+[assembly: FunctionsStartup(typeof(RCL.SDK.FunctionSample.Startup))]
+namespace RCL.SDK.FunctionSample
 {
     public class Startup : FunctionsStartup
     {
