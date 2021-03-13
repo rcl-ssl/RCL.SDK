@@ -1,6 +1,6 @@
 # RCL SDK
 
-The [RCL SDK](https://rcl-letsencrypt-auto-ssl.github.io/docs/sdk/sdk.html) provides a simple C# .NET Core 3.1 library to make authorized requests to the [RCL API](https://rcl-letsencrypt-auto-ssl.github.io/docs/api/api.html) .
+The [RCL SDK](https://rcl-letsencrypt-auto-ssl.github.io/docs/sdk/sdk.html) provides a simple C# .NET Core 3.1 library to make authorized requests to the [RCL API](https://rcl-letsencrypt-auto-ssl.github.io/docs/api/api.html). Use the SDK to get and renew SSL/TLS certificates in a user's subscription in the RCL portal.
 
 ## Installing the SDK
 
