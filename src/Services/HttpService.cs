@@ -13,7 +13,7 @@ namespace RCL.SDK
     {
         private static readonly HttpClient _httpClient;
         private readonly IAuthTokenService _authTokenService;
-        private readonly IOptions<LetsEncryptSDKOptions> _options;
+        private readonly IOptions<RCLSDKOptions> _options;
         
         static HttpService()
         {
@@ -22,7 +22,7 @@ namespace RCL.SDK
 
         public HttpService(
             IAuthTokenService authTokenService,
-            IOptions<LetsEncryptSDKOptions> options)
+            IOptions<RCLSDKOptions> options)
         {
             _authTokenService = authTokenService;
             _options = options;
@@ -52,7 +52,7 @@ namespace RCL.SDK
             }
             catch(Exception ex)
             {
-                throw new Exception($"Failure in RCL Lets Encrypt SDK GET request. {ex.Message}");
+                throw new Exception($"Failure in RCL SDK GET request. {ex.Message}");
             }
         }
 
@@ -82,7 +82,7 @@ namespace RCL.SDK
             }
             catch (Exception ex)
             {
-                throw new Exception($"Failure in RCL Lets Encrypt SDK POST request. {ex.Message}");
+                throw new Exception($"Failure in RCL SDK POST request. {ex.Message}");
             }
         }
 

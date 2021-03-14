@@ -2,7 +2,7 @@
 
 namespace RCL.SDK
 {
-    public class LetsEncryptSDKOptions
+    public class RCLSDKOptions
     {
         public string apiEndPoint { get; set; }
         public string armResource { get; set; }

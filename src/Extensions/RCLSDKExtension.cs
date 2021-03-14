@@ -4,9 +4,9 @@ using System;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class LetsEncryptSDKExtension
+    public static class RCLSDKExtension
     {
-        public static IServiceCollection AddLetsEncryptSDK(this IServiceCollection services, Action<LetsEncryptSDKOptions> setupAction)
+        public static IServiceCollection AddRCLSDK(this IServiceCollection services, Action<RCLSDKOptions> setupAction)
         {
             services.TryAddTransient<IHttpService, HttpService>();
             services.TryAddTransient<ICertificateService, CertificateService>();

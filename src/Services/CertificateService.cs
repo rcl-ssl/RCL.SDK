@@ -7,11 +7,11 @@ namespace RCL.SDK
     internal class CertificateService : ICertificateService
     {
         private readonly IHttpService _httpService;
-        private readonly IOptions<LetsEncryptSDKOptions> _options;
+        private readonly IOptions<RCLSDKOptions> _options;
 
         public CertificateService(
             IHttpService httpService,
-            IOptions<LetsEncryptSDKOptions> options)
+            IOptions<RCLSDKOptions> options)
         {
             _httpService = httpService;
             _options = options;

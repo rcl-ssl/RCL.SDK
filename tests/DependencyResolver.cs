@@ -14,7 +14,7 @@ namespace RCL.SDK.Tests
             IServiceCollection services = new ServiceCollection();
 
             services.AddAuthTokenService(options => Configuration.Bind("Auth",options));
-            services.AddLetsEncryptSDK(options => Configuration.Bind("LetsEncryptSDK", options));
+            services.AddRCLSDK(options => Configuration.Bind("RCLSDK", options));
             
             return services.BuildServiceProvider();
         }
