@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Version>3.1.0</Version>
+    <Version>3.1.1</Version>
     <Authors>Anil Ripla</Authors>
     <Company>Ray Consulting Limited</Company>
     <Description>An SDK to get and renew SSL/TLS certificates in a user's subscription in the RCL portal</Description>

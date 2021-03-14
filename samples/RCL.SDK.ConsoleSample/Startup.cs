@@ -15,7 +15,7 @@ namespace RCL.SDK.ConsoleSample
 
             // Add the SDK Services
             services.AddAuthTokenService(options => Configuration.Bind("Auth", options));
-            services.AddLetsEncryptSDK(options => Configuration.Bind("LetsEncryptSDK", options));
+            services.AddRCLSDK(options => Configuration.Bind("RCLSDK", options));
 
             return services.BuildServiceProvider();
         }
