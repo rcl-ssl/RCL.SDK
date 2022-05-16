@@ -1,5 +1,7 @@
 # RCL SDK
 
+![Nuget](https://img.shields.io/nuget/v/RCL.SDK)
+
 The [RCL SDK](https://docs.rclapp.com/sdk/sdk.html) provides a C# .NET Core library to make authorized requests to the [RCL Public API](https://docs.rclapp.com/api/api.html). Use the SDK to get and renew SSL/TLS certificates in a user's subscription in the [RCL Portal](https://docs.rclapp.com/portal/portal.html).
 
 ## Installing the SDK
