@@ -14,12 +14,6 @@ namespace RCL.SDK
         static ApiRequestBase()
         {
             _client = new HttpClient();
-            _client.DefaultRequestHeaders.TryAddWithoutValidation("RCL-Source", "CertificateBot");
-        }
-
-        public ApiRequestBase(IOptions<RCLSDKOptions> options)
-        {
-            _options = options;
         }
 
         public async Task PostAsync<T>(string uri, T payload)
@@ -27,6 +21,7 @@ namespace RCL.SDK
         {
             try
             {
+                SetClientHeaders();
                 var response = await _client.PostAsync($"{_options.Value.ApiBaseUrl}/{uri}",
                      new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"));
 
@@ -53,6 +48,7 @@ namespace RCL.SDK
         {
             try
             {
+                SetClientHeaders();
                 var response = await _client.PostAsync($"{_options.Value.ApiBaseUrl}/{uri}",
                      new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"));
 
@@ -86,6 +82,7 @@ namespace RCL.SDK
         {
             try
             {
+                SetClientHeaders();
                 var response = await _client.PostAsync($"{_options.Value.ApiBaseUrl}/{uri}",
                      new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"));
 
@@ -134,6 +131,11 @@ namespace RCL.SDK
                     return content;
                 }
             }
+        }
+
+        private void SetClientHeaders()
+        {
+            _client.DefaultRequestHeaders.TryAddWithoutValidation("RCL-Source", _options.Value.SourceApplication);
         }
     }
 }
