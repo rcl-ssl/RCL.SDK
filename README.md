@@ -16,7 +16,7 @@ Install-Package RCL.SDK
 
 You can read the detailed documentation on how to use the RCL SDK : 
 
-[RCL SDK](https://docs.rclapp.com/sdk/sdk.html)
+[RCL SDK Documentation](https://docs.rclapp.com/sdk/sdk.html)
 
 ## Contribute to this project
 
