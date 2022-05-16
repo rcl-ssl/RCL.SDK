@@ -9,7 +9,7 @@ The [RCL SDK](https://docs.rclapp.com/sdk/sdk.html) provides a C# .NET Core libr
 You can install the RCL SDK from NuGet.
 
 ```
-Install-Package RCL.SDK -Version 6.0.10
+Install-Package RCL.SDK
 ```
 
 ## Read the documentation
