@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>6.0.10</Version>
+    <Version>6.0.10.1</Version>
     <Authors>Anil Ripla</Authors>
     <Company>Ray Consulting Limited</Company>
     <Description>An C# SDK for the RCL Public API</Description>

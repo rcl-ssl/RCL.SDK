@@ -16,6 +16,11 @@ namespace RCL.SDK
             _client = new HttpClient();
         }
 
+        public ApiRequestBase(IOptions<RCLSDKOptions> options)
+        {
+            _options = options;
+        }
+
         public async Task PostAsync<T>(string uri, T payload)
             where T : class
         {
