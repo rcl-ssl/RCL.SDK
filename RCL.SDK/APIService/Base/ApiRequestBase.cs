@@ -140,6 +140,7 @@ namespace RCL.SDK
 
         private void SetClientHeaders()
         {
+            _client.DefaultRequestHeaders.Clear();
             _client.DefaultRequestHeaders.TryAddWithoutValidation("RCL-Source", _options.Value.SourceApplication);
         }
     }
