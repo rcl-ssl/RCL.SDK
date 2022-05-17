@@ -7,8 +7,9 @@
     <Version>6.0.10.1</Version>
     <Authors>Anil Ripla</Authors>
     <Company>Ray Consulting Limited</Company>
-    <Description>An C# SDK for the RCL Public API</Description>
+    <Description>A C# SDK for the RCL Public API</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/rcl-ssl/RCL.SDK</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

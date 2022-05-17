@@ -46,12 +46,12 @@ namespace RCL.SDK
                 }
                 else
                 {
-                    throw new Exception($"AutoRenewFunction could not obtain Access Token. {jstr}");
+                    throw new Exception($"Could not obtain Access Token. {jstr}");
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception($"AutoRenewFunction Access Token Error : {ex.Message}");
+                throw new Exception($"Access Token Error : {ex.Message}");
             }
 
             return authToken;
